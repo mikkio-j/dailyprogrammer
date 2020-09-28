@@ -106,6 +106,9 @@ pre {
   color: #ffe600;
   font-family: VT323;
   letter-spacing: 3px;
+}
+
+.test__click {
   cursor: pointer;
 }
 
