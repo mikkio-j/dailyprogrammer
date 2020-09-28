@@ -1,11 +1,14 @@
-function uniq(arr) {
-  arr.sort((a, b) => a - b);
-  arr.map((arrItem) => {
-    const index = arr.indexOf(arrItem);
-    if (arrItem === arr[index + 1]) {
-      arr.splice(index, 1);
+function funnel(str1, str2) {
+  let arr = str1.split('');
+  for (let charIndex in arr) {
+    arr.splice(charIndex, 1);
+    if (arr.join('') === str2) {
+      return true;
+    } else {
+      arr = str1.split('');
     }
-  });
-  return arr;
+  }
+  return false;
 }
-const myArr = [1, 9, 2, 5, 7, 8, 9, 5, 2];
+
+module.exports = funnel;
