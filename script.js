@@ -5,10 +5,15 @@ showTestButtons.forEach(function (button) {
     button.parentNode.parentNode
       .querySelector('.block__test')
       .classList.toggle('active');
-    if (button.innerText === 'show tests ▼') {
-      button.innerText = 'hide tests ▲';
+    if (
+      button.innerHTML ===
+      'show tests <i class="fa fa-angle-double-down" aria-hidden="true"></i>'
+    ) {
+      button.innerHTML =
+        'hide tests <i class="fa fa-angle-double-up" aria-hidden="true"></i>';
     } else {
-      button.innerText = 'show tests ▼';
+      button.innerHTML =
+        'show tests <i class="fa fa-angle-double-down" aria-hidden="true"></i>';
     }
   });
 });
