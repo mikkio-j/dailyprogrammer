@@ -67,6 +67,11 @@ a:hover {
   margin: 50px auto;
 }
 
+.block__code__solution {
+  position: relative;
+  z-index: 999;
+}
+
 h2 {
   color: #ffe600;
   font-size: 18px;
@@ -81,8 +86,7 @@ pre {
 }
 .block__test {
   display: none;
-  transform: scale(0.1);
-  z-index: -1;
+  transform: translateY(-100%);
 }
 .active {
   display: block;
@@ -92,10 +96,15 @@ pre {
 
 @keyframes fadeIn {
   0% {
-    transform: scale(0.5);
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  95% {
+    opacity: 0.3;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .block__test__button {
