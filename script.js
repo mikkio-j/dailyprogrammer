@@ -5,10 +5,10 @@ showTestButtons.forEach(function (button) {
     button.parentNode.parentNode
       .querySelector('.block__test')
       .classList.toggle('active');
-    if (button.innerText === 'show tests') {
-      button.innerText = 'hide tests';
+    if (button.innerText === 'show tests ▼') {
+      button.innerText = 'hide tests ▲';
     } else {
-      button.innerText = 'show tests';
+      button.innerText = 'show tests ▼';
     }
   });
 });

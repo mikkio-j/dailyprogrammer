@@ -64,7 +64,7 @@ a:hover {
 
 .block__code {
   width: 100%;
-  margin: 50px auto;
+  margin: 50px auto 75px;
 }
 
 .block__code__solution {
@@ -114,11 +114,16 @@ pre {
   margin: 0 auto;
   color: #ffe600;
   font-family: VT323;
-  letter-spacing: 3px;
 }
 
 .test__click {
   cursor: pointer;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.test__click:hover {
+  letter-spacing: 5px;
 }
 
 footer {
