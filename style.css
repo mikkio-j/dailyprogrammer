@@ -23,7 +23,7 @@ body {
 
 .block__maintext {
   width: 100%;
-  margin: 10px auto 30px;
+  margin: 15px auto 50px;
   display: flex;
   justify-content: center;
 }
@@ -33,7 +33,7 @@ h1 {
   font-family: Permanent Marker;
   font-style: normal;
   font-weight: normal;
-  font-size: 42px;
+  font-size: 46px;
   line-height: 30px;
   color: #ffe600;
   text-shadow: 2px 2px 0px #ae247b;
@@ -49,7 +49,16 @@ h1 {
   font-size: 18px;
   line-height: 100%;
   text-align: center;
-  color: #ae247b;
+  /* color: #ae247b; */
+  background: -webkit-linear-gradient(#ffe600, #ae247b 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
 }
 
 a {
@@ -120,6 +129,13 @@ pre {
   cursor: pointer;
   letter-spacing: 3px;
   transition: 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .test__click:hover {
@@ -150,6 +166,9 @@ footer {
     font-size: 22px;
     margin-top: 50px;
   }
+  p {
+    font-size: 22px;
+  }
   .block__code {
     width: 500px;
   }
@@ -167,6 +186,9 @@ footer {
     width: 500px;
     font-size: 26px;
     margin-top: 50px;
+  }
+  p {
+    font-size: 26px;
   }
   .block__code {
     width: 500px;
