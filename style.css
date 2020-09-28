@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #2a1f39;
+  padding: 0 10px 20px;
+  min-height: 100%;
+}
+
+.block__maintext {
+  width: 100%;
+  margin: 10px auto 30px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: inline-block;
+  font-family: Permanent Marker;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 30px;
+  color: #ffe600;
+  text-shadow: 2px 2px 0px #ae247b;
+  transform: rotate(-5.97deg);
+}
+
+.block__paragraph {
+  width: 100%;
+  margin: 0 auto;
+  font-family: VT323;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #ae247b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: #e65bb3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.block__code {
+  width: 100%;
+  margin: 50px auto;
+}
+
+h2 {
+  color: #ffe600;
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+}
+
+pre {
+  width: 100%;
+  border: 1px solid #ae247b;
+  padding: 0 15px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 50px;
+  color: #ffe600;
+  font-family: Permanent Marker;
+}
+
+@media (min-width: 500px) {
+  .block__maintext {
+    width: 500px;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 44px;
+  }
+  .block__paragraph {
+    width: 500px;
+    font-size: 22px;
+    margin-top: 50px;
+  }
+  .block__code {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block__maintext {
+    width: 800px;
+  }
+  h1 {
+    font-size: 84px;
+    line-height: 58px;
+  }
+  .block__paragraph {
+    width: 500px;
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  .block__code {
+    width: 500px;
+  }
+}
