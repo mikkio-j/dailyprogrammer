@@ -88,6 +88,10 @@ h2 {
   font-weight: 100;
 }
 
+h2 i {
+  color: green;
+}
+
 pre {
   width: 100%;
   border: 1px solid #ae247b;
@@ -212,7 +216,7 @@ footer {
   background: #fff67a;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #ffdd00;
+  background: #ff9900;
 }
 ::-webkit-scrollbar-track {
   background: #782268;
