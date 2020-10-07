@@ -74,6 +74,14 @@ a:hover {
 .block__code {
   width: 100%;
   margin: 50px auto 75px;
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: 0.5s;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .block__code__solution {
