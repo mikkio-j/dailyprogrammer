@@ -1,4 +1,4 @@
-![Daily Programmer](https://raw.githubusercontent.com/mikkio-j/dailyprogrammer/master/logo.PNG)
+![Daily Programmer](https://raw.githubusercontent.com/mikkio-j/dailyprogrammer/master/assets/logo.PNG)
 
 Daily programmer is a little challenge that I will be working on from time to time. Basically, I will be putting here my solutions to challenges from the subreddit/r/dailyprogrammer.
 
