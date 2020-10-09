@@ -75,7 +75,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 170px;
+  width: 250px;
   height: 100vh;
   background-color: #ffe600;
   color: #2a1f39;
@@ -89,10 +89,10 @@ nav {
 nav .nav__icon {
   position: relative;
   z-index: 9999;
-  height: 35px;
-  width: 35px;
-  right: -168px;
-  top: 0;
+  height: 60px;
+  width: 60px;
+  right: -248px;
+  top: calc(100vh - 60px);
   background-color: #ffe600;
   font-size: 26px;
   border-top-right-radius: 10px;
@@ -258,6 +258,10 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  nav .nav__icon {
+    top: 0;
+  }
+
   .block__maintext {
     width: 800px;
   }
