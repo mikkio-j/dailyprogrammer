@@ -1,4 +1,6 @@
 const showTestButtons = document.querySelectorAll('.test__click');
+const menuButton = document.querySelector('.nav__icon');
+const menu = document.querySelector('nav');
 const elementsToShow = document.querySelectorAll('.block__code');
 const scroll =
   window.requestAnimationFrame ||
@@ -50,3 +52,18 @@ function isElementInViewport(el) {
         (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+menuButton.addEventListener('mouseover', function () {
+  menu.classList.add('on-hover');
+});
+
+menuButton.addEventListener('mouseout', function () {
+  menu.classList.remove('on-hover');
+});
+
+menuButton.addEventListener('click', function () {
+  menu.classList.toggle('nav_active');
+  if (menu.classList.contains('nav_active')) {
+    menu.classList.remove('on-hover');
+  }
+});
