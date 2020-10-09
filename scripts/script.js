@@ -54,14 +54,19 @@ function isElementInViewport(el) {
         (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+if (
+  !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  menuButton.addEventListener('mouseover', function () {
+    menu.classList.add('on-hover');
+  });
 
-menuButton.addEventListener('mouseover', function () {
-  menu.classList.add('on-hover');
-});
-
-menuButton.addEventListener('mouseout', function () {
-  menu.classList.remove('on-hover');
-});
+  menuButton.addEventListener('mouseout', function () {
+    menu.classList.remove('on-hover');
+  });
+}
 
 menuButton.addEventListener('click', function () {
   menu.classList.toggle('nav_active');
@@ -71,3 +76,18 @@ menuButton.addEventListener('click', function () {
     menu.classList.remove('on-hover');
   }
 });
+
+function closeMobile(event) {
+  if (!event.target.matches('nav, .nav__icon, i')) {
+    menu.classList.remove('nav_active');
+    menuIconList.classList.toggle('button--unactive');
+    menuIconExit.classList.toggle('button--unactive');
+  }
+}
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  document.body.addEventListener('click', closeMobile);
+}
