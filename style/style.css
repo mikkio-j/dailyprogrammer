@@ -82,7 +82,7 @@ nav {
   font-family: 'Roboto', monospace;
   font-size: 18px;
   font-weight: 400;
-  transform: translateX(-100%);
+  transform: translateX(-101%);
   transition: 0.3s;
   z-index: 9999;
 }
@@ -92,7 +92,7 @@ nav .nav__icon {
   height: 60px;
   width: 60px;
   right: -248px;
-  top: calc(100vh - 60px);
+  top: calc(100vh - 120px);
   background-color: #ffe600;
   font-size: 26px;
   border-top-right-radius: 10px;
