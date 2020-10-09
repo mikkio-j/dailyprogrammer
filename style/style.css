@@ -82,7 +82,7 @@ nav {
   font-family: 'Roboto', monospace;
   font-size: 18px;
   font-weight: 400;
-  transform: translateX(-98%);
+  transform: translateX(-100%);
   transition: 0.3s;
   z-index: 9999;
 }
@@ -102,9 +102,11 @@ nav .nav__icon {
   align-items: center;
   cursor: pointer;
 }
-
+.button--unactive {
+  display: none;
+}
 .on-hover {
-  transform: translateX(-90%);
+  transform: translateX(-97%);
 }
 
 .nav_active {
@@ -123,6 +125,7 @@ nav a {
   color: #2a1f39;
   text-decoration: none;
   transition: 0.1s;
+  border-bottom: 1px dashed #782268;
 }
 
 nav li:hover {

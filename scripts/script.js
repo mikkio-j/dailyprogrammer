@@ -1,5 +1,7 @@
 const showTestButtons = document.querySelectorAll('.test__click');
 const menuButton = document.querySelector('.nav__icon');
+const menuIconList = document.querySelector('.fa-list-ul');
+const menuIconExit = document.querySelector('.fa-times');
 const menu = document.querySelector('nav');
 const elementsToShow = document.querySelectorAll('.block__code');
 const scroll =
@@ -63,6 +65,8 @@ menuButton.addEventListener('mouseout', function () {
 
 menuButton.addEventListener('click', function () {
   menu.classList.toggle('nav_active');
+  menuIconList.classList.toggle('button--unactive');
+  menuIconExit.classList.toggle('button--unactive');
   if (menu.classList.contains('nav_active')) {
     menu.classList.remove('on-hover');
   }
