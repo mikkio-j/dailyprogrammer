@@ -80,8 +80,8 @@ menuButton.addEventListener('click', function () {
 function closeMobile(event) {
   if (!event.target.matches('nav, .nav__icon, i')) {
     menu.classList.remove('nav_active');
-    menuIconList.classList.toggle('button--unactive');
-    menuIconExit.classList.toggle('button--unactive');
+    menuIconList.classList.remove('button--unactive');
+    menuIconExit.classList.add('button--unactive');
   }
 }
 if (
